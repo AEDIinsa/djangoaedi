@@ -1,0 +1,29 @@
+{% extends "aedisite/base.html" %}
+{% load static %}
+
+{% block title %}Services - {{ block.super }}{% endblock %}
+
+{% block content %}
+<div class="row blue darken-1 hide-on-med-and-down" id="index-banner">
+    <div class="container valign-wrapper">
+            <h2 class="white-text center-on-small-only font-weight-lower">Services</h2>
+    </div>
+</div>
+<ul class="collapsible popout" data-collapsible="accordion">
+    <li>
+        <div class="collapsible-header active"><i class="material-icons">weekend</i>Salle détente</div>
+        <div class="collapsible-body">
+            <div class="row">
+                <div class="col m9 s12">
+                    <p>L'AEDI met à disposition de tous les étudiants une salle détente au deuxième étage du Département.<br/>
+                    Lieu de rendez-vous et de repos au cœur du Département, c'est l'endroit idéal pour traîner avec les autres étudiants le midi, entre les cours, ou pour faire une pause pendant les
+                    longues nuits de travail au département ! N'hésite pas à venir pour profiter des canapés confortables et de la machine à café, l'allié indispensable d'une concentration acceptable !</p>
+                </div>
+                <div class="col m2 s11">
+                    <img class="materialboxed margin-it" width="100%" data-caption="Salle détente" src="{% static 'aedisite/img/salle_detente.jpg' %}"/>
+                </div>
+            </div>
+        </div>
+    </li>
+</ul>
+{% endblock %}

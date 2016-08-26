@@ -1,0 +1,38 @@
+{% load static %}
+
+<div class="container">
+    <div class="row">
+        <div class="col m5 s12">
+            <h5 class="white-text">AEDI INSA Lyon</h5>
+            <p class="grey-text text-lighten-5 light justify-text">Association de l'INSA de Lyon créée pour renforcer la cohésion entre les étudiants du Département Informatique, les aider dans leur cursus, et établir des contacts privilégiés avec les entreprises.</p>
+        </div>
+        <div class="col m6 offset-m1 s12">
+            <h5 class="white-text">Partenaires</h5>
+            <ul class="row center-align">
+                <li class="col s3"><a class="grey-text text-lighten-3" href="http://www.soprasteria.com">
+                        <img src="{% static 'aedisite/img/logo-sopraSteria.png' %}" class="full-width container">
+                    </a>
+                </li>
+                <li class="col s3"><a class="grey-text text-lighten-3" href="http://www.bull.com/fr/">
+                        <img src="{% static 'aedisite/img/logo-Atos.png' %}" class="full-width container">
+                    </a>
+                </li>
+                <li class="col s3"><a class="grey-text text-lighten-3" href="http://www.hardis-group.com">
+                        <img src="{% static 'aedisite/img/logo-Hardis.png' %}" class="full-width container">
+                    </a>
+                </li>
+                <li class="col s3"><a class="grey-text text-lighten-3" href="https://www.insa-lyon.fr">
+                        <img src="{% static 'aedisite/img/logo-INSA.png' %}" class="full-width container">
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+<div class="footer-copyright">
+    <div class="container">
+        © 2016 Copyright AEDI INSA Lyon
+        <a class="grey-text text-lighten-4 right" href="{% url 'aedisite:contact' %}">Nous contacter</a>
+    </div>
+</div>
+

@@ -1,0 +1,161 @@
+{% extends "aedisite/base.html" %}
+{% load static %}
+
+{% block title %}Présentation - {{ block.super }}{% endblock %}
+
+{% block content %}
+<div class="row blue darken-1 hide-on-med-and-down" id="index-banner">
+    <div class="container valign-wrapper">
+        <h2 class="white-text center-on-small-only font-weight-lower hide-on-med-and-down">L'Association</h2>
+    </div>
+</div>
+
+<ul class="collapsible popout" data-collapsible="accordion">
+    <li>
+        <div class="collapsible-header active"><i class="material-icons">info_outline</i>Présentation</div>
+        <div class="collapsible-body">
+            <p class="justify-text">
+            L'Association des Etudiants du Département Informatique occupe une position centrale dans la vie des élèves-ingénieurs. Elle accompagne leurs 3 ultimes années de formation
+            à travers l'organisation de nombreux évènements qui rythment l'année : intégration, soirées, simulations d'entretiens, forum de recrutement ... Elle est présente pour tous les
+            moments, des plus sérieux aux plus festifs !<br/>
+            Tous les étudiants du département sont automatiquement et gratuitement membres adhérents de l'association et peuvent profiter des différents services qu'elle est en mesure
+            de leur proposer grace aux actions menées en partenariat avec les entreprises, et notemment les parrains des promotions. L'AEDI est une association à but non lucratif,
+            l'ensemble de ses bénéfices servent à l'organisation d'évènements et de services pour les étudiants ainsi qu'au fonctionnement de l'association.<br/>
+            Chaque année, une équipe d'étudiants volontaires est élue pour reprendre sa tête et contribuer à son développement.
+            </p>
+        </div>
+    </li>
+    <li>
+        <div class="collapsible-header"><i class="material-icons">done</i>Notre mission</div>
+        <div class="collapsible-body">
+            <p class="justify-text">
+            L'AEDI a un double rôle. Elle a pour but de renforcer la cohésion entre les étudiants du département et de les accompagner dans leur cursus.
+            Elle a également pour mission de favoriser les échanges entre les étudiants et les entreprises.<br/> 
+            Au fil de l'année, de nombreuses entreprises du secteur viennent donner des conférences
+            à destination des étudiants afin de leur faire découvrir les métiers et les technologies innovantes du monde de l'informatique.<br/>
+            L'association met également en contact les étudiants et les entreprises à l'occasion des Rencontres IF, le forum de recrutement du département,
+            où les entreprises peuvent nouer des liens solides avec leurs futurs collaborateurs.<br/>
+            Même si il est primordial pour les élèves de se projeter dans le futur, la mission de l'AEDI est aussi de leur faire profiter du présent et leurs années étudiantes !<br/>
+            L'AEDI s'est donc donnée comme vocation d'être un acteur clé du Département, en aidant les étudiants dans tous les facettes de leurs études.
+            </p></div>
+    </li>
+    <li>
+        <div class="collapsible-header"><i class="material-icons">favorite_border</i>Nos valeurs</div>
+        <div class="collapsible-body">
+            <p class="justify-text">
+            L'AEDI a fait le vœu de croire profondément dans le potentiel des étudiants du Département Informatique. 
+            Nous chérissons et encourageons la diversité de profils au sein de nos étudiants et nous mettons un point d'honneur à favoriser une atmosphère d'échange 
+            et de camaraderie plutôt que de compétition.<br/>
+            Nous encourageons les initiatives associatives et les projets d'innovations personnels.
+            </p></div>
+    </li>
+    <li>
+        <div class="collapsible-header"><i class="material-icons">perm_identity</i>L'équipe</div>
+        <div class="collapsible-body"><p>
+            <div class="row">
+                <div class="col l7 m7 s12">
+                    <img class="materialboxed" width="100%" data-caption="Bureau de l'AEDI" src="{% static 'aedisite/img/staff/bureau.jpg' %}"/>
+                </div>
+
+                <div class="col l5 m5 s12">
+                    <h4>Le Bureau</h4>
+                    <p class="weight-300">
+                    <i>À la tête de l'association, le Bureau coordonne les différentes équipes.</i>
+                    <br/><br/>
+                    <b>Théo THIBAULT</b> - Vice-Président <br/>
+                    <b>Antoine PAYAN</b> - Trésorier <br/>
+                    <b>Lou HAMMEL</b> - Secrétaire Générale <br/>
+                    <b>Hugo DAVID-BOYET</b> - Président <br/>
+                    </p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col l7 m7 s12">
+                    <img class="materialboxed" width="100%" data-caption="Équipe des relations entreprise de l'AEDI" src="{% static 'aedisite/img/staff/entreprise.jpg' %}"/>
+                </div>
+                <div class="col 15 m5 s12">
+                    <h4>Équipe Entreprise</h4>
+                    <p>
+                    <i>Chargée des relations Entreprises, l'équipe organise les conférences, les Rencontres IF et la journée de l'innovation, en partenariat avec les entreprises.</i>
+                    <br/><br/>
+                    <b>Christopher APARICIO</b><br/>
+                    <b>Olivier VICENTE</b><br/>
+                    <b>Selma NEMMAOUI</b><br/>
+                    <b>Ruxandra POMANA</b><br/>
+                    <b>François CHASTEL</b> - Responsable<br/>
+                    <b>Jacques FOLLEAS</b><br/>
+                    </p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col l7 m7 s12">
+                    <img class="materialboxed" width="100%" data-caption="Équipe DSI & Communication de l'AEDI" src="{% static 'aedisite/img/staff/comdsi.jpg' %}"/>
+                </div>
+
+                <div class="col l5 m5 s12">
+                    <h4>Équipe DSI & Communication</h4>
+                    <p>
+                    <i>L'Equipe DSI & Communication est chargée du maintien et du développement des services informatiques disponibles pour les étudiants. Elle est également en charge
+                        de la communication envers les étudiants du département.</i>
+                    <br/><br/>
+                    <b>Hugo DAVID-BOYET</b><br/>
+                    <b>Olivier VICENTE</b><br/>
+                    <b>Joachim DOREL</b> - Responsable<br/>
+                    <b>François CHASTEL</b><br/>
+                    </p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col l7 m7 s12">
+                    <img class="materialboxed" width="100%" data-caption="Équipe du Concert'IF de l'AEDI" src="{% static 'aedisite/img/staff/concert.jpg' %}"/>
+                </div>
+
+                <div class="col l5 m5 s12">
+                    <h4>Équipe Concert'IF</h4>
+                    <p>
+                    <i>L'Equipe du Concert'IF organise deux spectacles pendant l'année mettant en avant les compétences artistiques de nos étudiants : musique, théâtre et humour sont au rendez-vous !</i>
+                    <br/><br/>
+                    <b>Rim EL IDRISSI MOKDAD</b> - Responsable<br/>
+                    <b>Olivier VICENTE</b><br/>
+                    </p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col l7 m7 s12">
+                    <img class="materialboxed" width="100%" data-caption="Équipe Intégration de l'AEDI"
+                                                            src="{% static 'aedisite/img/staff/inte.jpg' %}"/>
+                </div>
+
+                <div class="col l5 m5 s12">
+                    <h4>Équipe Intégration</h4>
+                    <p>
+                    <i>Chargés de l'organisation de la semaine et du Week-End d'intégration, l'équipe a pour mission de souder les nouveaux étudiants et d'instaurer un climat chaleureux pour les 3 années à venir.</i>
+                    <br/><br/>
+                    <b>Théophile SAYER</b> - Responsable WEI<br/>
+                    <b>Pierre JAGLIN</b><br/>
+                    <b>Adrien BAUX</b> - Responsable Intégration<br/>
+                    <b>Lou HAMMEL</b><br/>
+                    <b>Mehdi BAHA</b><br/>
+                    </p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col l7 m7 s12">
+                    <img class="materialboxed" width="100%" data-caption="Équipe Animation de l'AEDI"
+                                                            src="{% static 'aedisite/img/staff/anim.jpg' %}"/>
+                </div>
+
+                <div class="col l5 m5 s12">
+                    <h4>Équipe Animation</h4>
+                    <p>
+                    <i>Soirées, barbecues, activités ... L'Équipe Animation prend le relais de l'Équipe Intégration pour que les étudiants puissent profiter pleinement de leurs années au département IF.</i>
+                    <br/><br/>
+                    <b>Vianney ARCEL</b> - Responsable<br/>
+                    <b>Kim BERTRAND</b><br/>
+                    </p>
+                </div>
+            </div>
+            </p></div>
+    </li>
+</ul>
+{% endblock %}

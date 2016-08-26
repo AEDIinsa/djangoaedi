@@ -1,0 +1,181 @@
+{% extends "aedisite/base.html" %}
+{% load static %}
+
+{% block title %}Agenda - {{ block.super }}{% endblock %}
+
+{% block content %}
+
+<div class="row blue darken-1 hide-on-med-and-down" id="index-banner">
+    <div class="container valign-wrapper">
+        <h2 class="white-text center-on-small-only font-weight-lower ">Agenda</h2>
+    </div>
+</div>
+<ul class="collapsible popout" data-collapsible="accordion">
+    <li>
+        <div class="collapsible-header active"><i class="material-icons">sentiment_very_satisfied</i>Divertissements</div>
+        <div class="collapsible-body">
+            <div class="margin-it">
+                <div class="row">
+                    <div class="col s12 m4">
+                        <div class="icon-block">
+                            <h2 class="center light-blue-text"><i class="material-icons">flag</i></h2>
+                            <h5 class="center">Semaine d'Intégration</h5>
+                            <p class="light">
+                            Dès leur arrivée, les nouveaux étudiants sont accueillis par l'équipe d'intégration : au programme, de nombreuses activités organisées avec l'aide de
+                            leur parrain de promotion afin qu'ils tissent leurs premiers liens.
+                            <br><br><i class="center-block">Date : Du 8 au 15 septembre 2016</i>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col s12 m4">
+                        <div class="icon-block">
+                            <h2 class="center light-blue-text"><i class="material-icons">flight_takeoff</i></h2>
+                            <h5 class="center">Le Week-end d'Intégration</h5>
+                            <p class="light">
+                            Après une conférence de présentation organisée en partenariat avec le parrain de promotion, les étudiants de 3ème année partent tous ensemble pour
+                            vivre un week-end qu'ils ne sont pas prêts d'oublier : animations, soirées et rencontres au programme.
+                            <br><br><i class="center-block">Date : Les 17 et 18 septembre 2016</i>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col s12 m4">
+                        <div class="icon-block">
+                            <h2 class="center light-blue-text"><i class="material-icons">local_drink</i></h2>
+                            <h5 class="center">Le Pot IF</h5>
+                            <p class="light">
+                            Chaque département doit traditionellement organiser une petite soirée à destination de l'ensemble des autres étudiants de l'INSA de Lyon.
+                            L'organisation est confiée à une équipe de 3ème année qui prennent leurs premières responsabilités dans l'association pour rendre cette soirée mémorable et
+                            assoir la place du département informatique au sein des autres départements de l'INSA.
+                            <br><br><i class="center-block">Date : Courant Novembre</i>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+
+                    <div class="col s12 m4">
+                        <div class="icon-block">
+                            <h2 class="center light-blue-text"><i class="material-icons">terrain</i></h2>
+                            <h5 class="center">Le Week-end Neige</h5>
+                            <p class="light">
+                            Pour fêter la fin des partiels du premier semestre tous les élèves du départements sont invités à un voyage à la montagne.
+                            C'est l'occasion de retrouver l'ambience de l'intégration autour d'une fondue ou sur les pistes ! Des activités sont prévues
+                            pour tous, skieurs ou non.
+                            <br><br><i class="center-block">Date : Fin Janvier</i>
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="col s12 m4">
+                        <div class="icon-block">
+                            <h2 class="center light-blue-text"><i class="material-icons">music_note</i></h2>
+                            <h5 class="center">Le Concert'IF</h5>
+                            <p class="light">
+                            Le concert IF est un moment incontournable durant lequel les étudiants du département montent sur scène pour mettre en avant
+                            leurs compétences artistiques : théâtre, musique et humour sont au programme pour une soirée décalée et bon enfant.
+                            <br><br><i class="center-block">Date : Novembre et Février</i>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col s12 m4">
+                        <div class="icon-block">
+                            <h2 class="center light-blue-text"><i class="material-icons">turned_in</i></h2>
+                            <h5 class="center">La Remise des Diplômes</h5>
+                            <p class="light">
+                            En Février tous les diplômés de l'an passé sont invités à retourner au département pour recevoir leur diplôme en compagnie de leur famille
+                            et de tous leurs camarades de promotion qu'ils retrouvent enfin après 6 mois dans le monde professionnel.
+                            <br><br><i class="center-block">Date : Février</i>
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="row">
+
+                    <div class="col s12 m4">
+                        <div class="icon-block">
+                            <h2 class="center light-blue-text"><i class="material-icons">flare</i></h2>
+                            <h5 class="center">Le Week-end de fin d'année</h5>
+                            <p class="light">
+                            Avant de partir de partir en vacances tous les étudiants partent ensemble pour fêter le retour du soleil et le départ en stage des étudiants de 4ème année.
+                            Barbecues, piscine et autres activités estivales sont au programme.
+                            <br><br><i class="center-block">Date : Vacances de Printemps</i>
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="col s12 m4">
+                        <div class="icon-block">
+                            <h2 class="center light-blue-text"><i class="material-icons">pause_circle_outline</i></h2>
+                            <h5 class="center">Le Barbecue post-partiels</h5>
+                            <p class="light">
+                            Le traditionnel barbecue sonne la fin de l'année : étudiants et enseignants se retrouvent à la sortie de la dernière épreuve des partiels des 3ème années pour
+                            partager un bon repas et un bon moment avant leur départ pour l'été.
+                            <br><br><i class="center-block">Date : Début Juin</i>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col s12 m4">
+                        <div class="icon-block">
+                            <h2 class="center light-blue-text"><i class="material-icons">loop</i></h2>
+                            <h5 class="center">Animations inédites</h5>
+                            <p class="light">
+                            Tout au long de l'année, notre équipe Animation se démène pour organiser des moments magiques qui viennent s'ajouter aux rendez-vous traditionnels présentés ici !
+                            <br><br><i class="center-block">Date : Toute l'année</i>
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </li>
+    <li>
+        <div class="collapsible-header"><i class="material-icons">business</i>Entreprises</div>
+        <div class="collapsible-body">
+            <div class="margin-it">
+                <div class="row">
+                    <div class="col s12 m4">
+                        <div class="icon-block">
+                            <h2 class="center light-blue-text"><i class="material-icons">work</i></h2>
+                            <h5 class="center">Les Rencontres IF</h5>
+                            <p class="light">
+                            A la recherche du stage de tes rêves ? Du premier emploi idéal ? Les Rencontres IF c'est l'évènement annuel qu'il ne faut pas manquer !
+                            La journée est banalisée pour l'occasion et de grandes entreprises sont là pour rencontrer et échanger avec les étudiants du département.
+                            C'est l'occasion unique de prendre des contacts alors n'oublies pas tes CV et ton costume.
+                            <br><br><i>Date : 24 novembre 2016</i>
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="col s12 m4">
+                        <div class="icon-block">
+                            <h2 class="center light-blue-text"><i class="material-icons">volume_up</i></h2>
+                            <h5 class="center">Les Conférences</h5>
+                            <p class="light">
+                            Tout au long de l'année, des entreprises viennent présenter leurs métiers, ou des concepts qu'elles ont à cœur. 
+                            C'est l'opportunité de découvrir les tendances actuelles qui agitent le monde professionnel, et d'échanger de manière conviviale
+                            avec des experts dans leur domaine.
+                            <br><br><i>Date : Les Jeudis après-midi</i>
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="col s12 m4">
+                        <div class="icon-block">
+                            <h2 class="center light-blue-text"><i class="material-icons">speaker_notes</i></h2>
+                            <h5 class="center">Les Simulations d'entretiens</h5>
+                            <p class="light">
+                            Proposées par des sociétés partenaires, ces simulations permettent aux étudiants de mettre leur argumentaire et leur charisme à l'épreuve de recruteurs expérimentés.
+                            Cela leur permet d'obtenir des remarques et des conseils afin de les aider à mieux réussir leur recherche de stage et peut-être même à mieux cerner leur profil.
+                            <br><br><i>Date : Les Jeudis après-midi</i>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </li>
+</ul>
+
+{% endblock %}

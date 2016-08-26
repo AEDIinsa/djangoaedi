@@ -1,0 +1,61 @@
+{% extends "aedisite/base.html" %}
+{% load static %}
+
+{% block title %}Contact - {{ block.super }}{% endblock %}
+
+{% block content %}
+<div class="row blue darken-1 hide-on-med-and-down" id="index-banner">
+    <div class="container valign-wrapper">
+        <h2 class="white-text center-on-small-only font-weight-lower">Nous contacter</h2>
+    </div>
+</div>
+<div class="container">
+    <div class="row">
+        <div class="section">
+            <p>
+            Vous souhaitez obtenir des informations sur les évènements organisés, entamer un partenariat, ou tout simplement nous dire bonjour ?
+            L'échange est notre priorité !
+            Voici nos coordonnées :
+            </p>
+            <ul class="collection with-header">
+                <li class="collection-header"><h4>E-mails</h4></li>
+                <li class="collection-item avatar">
+                    <i class="material-icons circle green">people_outline</i>
+                    <span class="title"><b>Bureau de l'Association</b></span>
+                    <p>aedi.bureau@listes.insa-lyon.fr</p>
+                    <a href="mailto:aedi.bureau@listes.insa-lyon.fr" class="secondary-content"><i class="material-icons">send</i></a>
+                </li>
+                <li class="collection-item avatar center-it">
+                    <i class="material-icons circle red">business</i>
+                    <span class="title"><b>Relations avec les Entreprises</b></span>
+                    <p>aedi.entreprise.asso@listes.insa-lyon.fr</p>
+                    <a href="mailto:aedi.entreprise.asso@listes.insa-lyon.fr" class="secondary-content"><i class="material-icons">send</i></a>
+                </li>
+                <li class="collection-item avatar center-it">
+                    <i class="material-icons circle blue">share</i>
+                    <span class="title"><b>Communication</b></span>
+                    <p>aedi.com.asso@listes.insa-lyon.fr</p>
+                    <a href="mailto:aedi.com.asso@listes.insa-lyon.fr" class="secondary-content"><i class="material-icons">send</i></a>
+                </li>
+                <li class="collection-item avatar center-it">
+                    <i class="material-icons circle yellow">music_note</i>
+                    <span class="title"><b>Concert'IF</b></span>
+                    <p>aedi.concert.asso@listes.insa-lyon.fr</p>
+                    <a href="mailto:aedi.concert.asso@listes.insa-lyon.fr" class="secondary-content"><i class="material-icons">send</i></a>
+                </li>
+            </ul>
+            <ul class="collection with-header">
+                <li class="collection-header"><h4>Adresse</h4></li>
+                <li class="collection-item avatar">
+                    <i class="material-icons circle blue">location_on</i>
+                    <span class="title"><b>AEDI - INSA de Lyon</b></span>
+                    <p>Département Informatique, Bat. 502<br>
+                    20, av. Albert Einstein<br>
+                    69621 Villeurbanne Cedex - France</p>
+                    <a href="http://www.openstreetmap.org/?mlat=45.78222&mlon=4.87274#map=19/45.78222/4.87274" target="_blank" class="secondary-content"><i class="material-icons">my_location</i></a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+{% endblock %}

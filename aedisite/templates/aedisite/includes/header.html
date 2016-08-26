@@ -1,0 +1,93 @@
+{% load static %}
+
+<div class="row blue darken-1 hide-on-large-only" id="index-banner">
+    <div class="container valign-wrapper">
+	<div class="col s1">
+	    <a href="#" data-activates="slide-out" class="button-collapse hide-on-large-only white-text"><i class="material-icons menu-size">menu</i></a>
+	</div>
+	<div class="col s3 offset-s8">
+	    <img src="{% static 'aedisite/img/logo-aedi.png' %}" style="height:50px;" class="center-it margin-it">
+	</div>
+    </div>
+</div>
+
+<ul id="slide-out" class="side-nav">
+    <li class="none-hover ">
+        <img  src="{% static 'aedisite/img/logo-aedi.png' %}"  class="brand-logo center-it margin-it container"/>
+    </li>
+    <hr class="blue-grey">
+    <li class="waves-effect waves-teal full-width {% if active == 'index' %} active{% endif %}"><a href="{% url 'aedisite:index' %}" class="bold">Accueil</a></li>
+    <li class="waves-effect waves-teal full-width {% if active == 'presentation' %} active{% endif %}"><a href="{% url 'aedisite:presentation' %}" class="bold">Présentation</a></li>
+    <li class="no-padding">
+        <ul class="collapsible collapsible-accordion">
+            <li>
+                <a class="collapsible-header bold waves-effect waves-teal">Étudiants</a>
+                <div class="collapsible-body">
+                    <ul>
+                        <li ><a href="{% url 'aedisite:agenda' %}" class="light-on-nav {% if active == 'agenda' %} active{% endif %}">Agenda</a></li>
+                        <li ><a href="{% url 'aedisite:services' %}" class="light-on-nav {% if active == 'services' %} active{% endif %}">Services</a></li>
+                    </ul>
+                </div>
+            </li>
+        </ul>
+    </li>
+    <li class="no-padding">
+        <ul class="collapsible collapsible-accordion">
+            <li>
+                <a class="collapsible-header bold waves-effect waves-teal">Entreprise</a>
+                <div class="collapsible-body">
+                    <ul>
+                        <li ><a href="{% url 'aedisite:rencontresif' %}" class="light-on-nav {% if active == 'renconctresif' %} active{% endif %}">Rencontres IF</a></li>
+                        <li ><a href="{% url 'aedisite:entretiens' %}" class="light-on-nav {% if active == 'entretiens' %} active{% endif %}">Simulations d'entretiens</a></li>
+                        <li ><a href="{% url 'aedisite:conferences' %}" class="light-on-nav {% if active == 'conferences' %} active{% endif %}">Conférences</a></li>
+                        <li ><a href="{% url 'aedisite:parrain' %}" class="light-on-nav {% if active == 'parrain' %} active{% endif %}">Devenir Parrain</a></li>
+
+                    </ul>
+                </div>
+            </li>
+        </ul>
+    </li>
+    <li class="waves-effect waves-teal full-width"><a href="{% url 'aedisite:contact' %}" class="bold {% if active == 'contact' %} active{% endif %}">Contact</a></li>
+</ul>
+
+<ul class="side-nav hide-on-med-and-down fixed">
+  <li class="none-hover ">
+        <img  src="{% static 'aedisite/img/logo-aedi.png' %}"  class="brand-logo center-it margin-it container"/>
+    </li>
+    <hr class="blue-grey">
+    <li class="waves-effect waves-teal full-width {% if active == 'index' %} active{% endif %}"><a href="{% url 'aedisite:index' %}" class="bold">Accueil</a></li>
+    <li class="waves-effect waves-teal full-width{% if active == 'presentation' %} active{% endif %}"><a href="{% url 'aedisite:presentation' %}" class="bold">L'Association</a></li>
+    <li class="no-padding">
+        <ul class="collapsible collapsible-accordion">
+            <li>
+                <a class="collapsible-header bold waves-effect waves-teal
+                   {% if active == 'agenda' or active == 'services' %}active{% endif %}">Étudiants</a>
+                <div class="collapsible-body">
+                    <ul>
+                        <li class="{% if active == 'agenda' %}active{% endif %}"><a href="{% url 'aedisite:agenda' %}" class="light-on-nav">Agenda</a></li>
+                        <li class="{% if active == 'services' %}active{% endif %}"><a href="{% url 'aedisite:services' %}" class="light-on-nav">Services</a></li>
+                    </ul>
+                </div>
+            </li>
+        </ul>
+    </li>
+    <li class="no-padding">
+        <ul class="collapsible collapsible-accordion">
+            <li >
+                <a class="collapsible-header {% if active == 'rencontresif' or active == 'entretiens' or active == 'conferences' or active == 'parrain' %}active{% endif %} 
+                            bold waves-effect waves-teal">Entreprise</a>
+                <div class="collapsible-body">
+                    <ul>
+                        <li class="{% if active == 'rencontresif' %}active{% endif %}"><a href="{% url 'aedisite:rencontresif' %}" class="light-on-nav">Rencontres IF</a></li>
+                        <li class="{% if active == 'entretiens' %}active{% endif %}"><a href="{% url 'aedisite:entretiens' %}" class="light-on-nav">Simulations d'entretiens</a></li>
+                        <li class="{% if active == 'conferences' %}active{% endif %}"><a href="{% url 'aedisite:conferences' %}" class="light-on-nav">Conférences</a></li>
+                        <li class="{% if active == 'parrain' %}active{% endif %}"><a href="{% url 'aedisite:parrain' %}" class="light-on-nav">Devenir Parrain</a></li>
+
+                    </ul>
+                </div>
+            </li>
+        </ul>
+    </li>
+    <li class="waves-effect waves-teal full-width{% if active == 'contact' %} active{% endif %}"><a href="{% url 'aedisite:contact' %}" class="bold">Contact</a></li>
+  </ul>
+

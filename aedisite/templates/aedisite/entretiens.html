@@ -1,0 +1,130 @@
+{% extends "aedisite/base.html" %}
+{% load static %}
+
+{% block title %}Entretiens - {{ block.super }}{% endblock %}
+
+{% block content %}
+<div class="row blue darken-1" id="index-banner">
+    <div class="container valign-wrapper hide-on-med-and-down">
+        <h2 class="white-text center-on-small-only font-weight-lower">Simulations d'entretien</h2>
+    </div>
+</div>
+<ul class="collapsible popout" data-collapsible="accordion">
+    <li>
+        <div class="collapsible-header active"><i class="material-icons">info_outline</i>Présentation</div>
+        <div class="collapsible-body">
+            <div class="margin-it">
+                <div class="row">
+                    <div class="col s12 m7">
+                        En partenariat avec des entreprises volontaire issues du domaine de l'informatique, les étudiants et étudiantes ont la possibilité de s'inscrire volontairement aux
+                        ateliers de simulation d'entretien d'embauche. C'est une occasion unique pour eux de s'<b>initier à l'exercice</b> délicat de l'entretien professionnel : après leur échange avec les membres des
+                        équipes de ressources humaines des plus grandes entreprises du secteur, ils reçoivent des <b>conseils</b> et des <b>remarques personnalisées</b> sur leur profil.<br/>
+                        Les Entreprises profitent d'une occasion idéale pour <b>découvrir de nouveaux profils</b>, échanger avec nos étudiants et renforcer leur image au sein du département.
+                        <br/><br/>
+                        Les simulations d'entretien se déroulent au sein du département Informatique en dehors du temps scolaire (généralement les <b>jeudis après-midi</b>). Les entreprises proposent
+                        plusieurs créneaux à l'AEDI et les étudiants peuvent alors s'y inscrire pour rencontrer les recruteurs. L'entretien se termine par un <b>échange entre les professionnels et
+                            l'étudiant</b> pour commenter sa prestation, dresser son profil et lui prodiguer de précieux conseils. L'exercice est pris très au sérieux par les étudiants et peut parfois
+                        être l'occasion d'un premier échange avec une entreprise qui l'intéresse.
+                    </div>
+
+                    <div class="col s12 m5">
+                        <img class="materialboxed" width="100%" data-caption="Etudiante prête pour un entretien" src="{% static 'aedisite/img/entretiens.jpg' %}"/>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </li>
+    <li>
+        <div class="collapsible-header active"><i class="material-icons">show_chart</i>Bilan 2015</div>
+        <div class="collapsible-body">
+            <div class="margin-it">
+                <div class="row">
+                    <div class="col s4 center-align">
+                        <span style="font-size:52px;">8</span><br/> sessions
+                    </div>
+                    <div class="col s4 center-align">
+                        <span style="font-size:52px;">119</span><br/> entretiens
+                    </div>
+                    <div class="col s4 center-align">
+                        <span style="font-size:52px;">19</span><br/> entreprises partenaires
+                    </div>
+                    <div class="col s12 center-align light margin-it">
+                        <br/> ALTECA, ALTRAN, AMADEUS, ATOS, BUSINESS & DECISION, CAP GEMINI, ESKER, FIDUCIAL, MICROPOLE, ORANGE BUSINESS SERVICES, OSIATIS, SII, SOLUCOM, SOLUTEC, SQLI, SOPRA STERIA, THALES, VISEO, ZENIKA.
+
+                    </div>
+                    <div class="row center">
+                        <a href="http://if.insa-lyon.fr/fr/content/simulation-dentretiens" target="_blank" class="btn-large waves-effect waves-light blue lighten-1 modal-trigger">Plus d'informations (Site du Département)</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </li>
+    <li>
+        <div class="collapsible-header"><i class="material-icons">search</i>Informations</div>
+        <div class="collapsible-body">
+            <div class="margin-it">
+                <div class="row">
+                    <div class="col s12 m4">
+                        <div class="icon-block">
+                            <h2 class="center light-blue-text"><i class="material-icons">date_range</i></h2>
+                            <h5 class="center">Dates</h5>
+                            <p class="light">
+                            Les sessions de simulation ont lieu les Jeudis après-midi, tout au long de l'année (hors vacances scolaires).<br/>
+                            Si vous êtes une entreprise et que vous souhaitez participer à des simulations d'entretien, n'hésitez pas à nous contacter, nous répondrons à votre demande
+                            dans les plus brefs délais.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="col s12 m4">
+                        <div class="icon-block">
+                            <h2 class="center light-blue-text"><i class="material-icons">perm_contact_calendar</i></h2>
+                            <h5 class="center">Contact</h5>
+                            <p class="light">
+                            Les inscriptions pour les simulations d'entretien se font directement avec le département Informatique.
+                            </p>
+                            <ul class="collection">
+                                <li class="collection-item avatar">
+                                    <i class="material-icons circle blue">phone</i>
+                                    <span class="title">
+                                        <b>Laurence LOPEZ</b><br/>
+                                        <span class="light">
+                                            04 72 43 70 64<br/>
+                                            <i><a href="mailto:laurence.lopez@insa-lyon.fr">laurence.lopez@insa-lyon.fr</a></i>
+                                        </span>
+                                    </span>
+                                </li>
+                                <li class="collection-item avatar">
+                                    <i class="material-icons circle blue">email</i>
+                                    <span class="title">
+                                        <b>Marie-Claire THIVEND</b><br/>
+                                        <span class="light">
+                                            <i><a href="mailto:marie-claire.thivend@insa-lyon.fr">marie-claire.thivend@insa-lyon.fr</a></i>
+                                        </span>
+                                    </span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="col s12 m4">
+                        <div class="icon-block">
+                            <h2 class="center light-blue-text"><i class="material-icons">add_to_queue</i></h2>
+                            <h5 class="center">Détails supplémentaires</h5>
+                            <p class="light">
+                            N'hésitez pas à consulter directement le site du département Informatique pour obtenir des détails supplémentaires par rapport à ses simulations d'entretiens.
+                            </p>
+                            <div class="row center">
+                                <a href="http://if.insa-lyon.fr/fr/content/simulation-dentretiens" target="_blank" class="btn-large waves-effect waves-light blue lighten-1 modal-trigger">Accéder au Site<span class="show-on-large-only"> du Département</span></a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </li>
+</ul>
+
+{% endblock %}

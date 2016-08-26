@@ -1,0 +1,122 @@
+/* Custom Stylesheet */
+/**
+ * Use this file to override Materialize files so you can update
+ * the core Materialize files in the future
+ *
+ * Made By MaterializeCSS.com
+ */
+header, main, footer {
+    padding-left: 300px;
+}
+
+@media only screen and (max-width : 992px) {
+    header, main, footer {
+        padding-left: 0;
+    }
+}
+
+.on-light-background{
+    text-shadow: 2px 2px #000000;
+}
+
+.on-light-small-background{
+    text-shadow: 1px 1px #000000;
+}
+
+.center-it{
+    vertical-align: middle;
+}
+
+.icon-block {
+  padding: 0 15px;
+}
+.icon-block .material-icons {
+	font-size: inherit;
+}
+
+.margin-it{
+    margin: 1rem;
+}
+
+.full-height{
+    min-height: 50rem;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+.full-height-with-padding{
+    min-height: 50rem;
+    height: 100%;
+}
+
+.full-width{
+    min-width: 100%;
+}
+
+body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+}
+
+main {
+    flex: 1 0 auto;
+}
+
+.margin-it-higher{
+    margin: 4rem;
+}
+
+.bold{
+    font-weight: bold !important;
+    line-height: 44px !important;
+    font-size: 15px !important;
+    height: 44px !important;
+    padding-bottom: 0px !important;
+    padding-top: 0px !important;
+}
+
+.light-on-nav{
+    line-height: 44px !important;
+    font-size: 12px !important;
+    height: 44px !important;
+    padding-bottom: 0px !important;
+    padding-top: 0px !important;
+}
+
+.menu-size{
+    font-size: 32px;
+    line-height: 48px;
+}
+
+.no-marg-top {
+    margin-top: 0px !important;
+}
+
+.no-marg-bot {
+    margin-bottom: 0px !important;
+}
+
+.no-marg-left {
+    margin-left: 0px !important;
+}
+
+.no-marg-right {
+    margin-right: 0px !important;
+}
+
+.no-margin
+{   margin-right: 0px !important;
+    margin-bottom: 0px !important;
+    margin-left: 0px !important;
+    margin-top: 0px !important;
+}
+
+.justify-text
+{	text-align: justify;
+}
+
+.side-nav .collapsible-body li.active, .side-nav.fixed .collapsible-body li.active 
+{   background-color: #2196f3;
+}

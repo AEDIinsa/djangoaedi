@@ -1,0 +1,48 @@
+{% extends "aedisite/base.html" %}
+{% load static %}
+
+{% block title %}Accueil - {{ block.super }}{% endblock %}
+
+{% block content %}
+<div class="slider full-height">
+    <ul class="slides">
+        <li class="full-height">
+            <img src="{% static 'aedisite/img/conference.jpg' %}">
+            <div class="caption left-align">
+                <h3 class="on-light-background">Une connexion entre étudiants et entreprises</h3>
+                <h5 class="light grey-text text-lighten-3 on-light-background">Tout au long de l'année, l'AEDI permet aux étudiants de s'ouvrir sur le monde professionel à travers de nombreuses conférences réalisées par des entreprises reconnues.</h5>
+            </div>
+        </li>
+        <li class="full-height">
+            <img src="{% static 'aedisite/img/team.jpg' %}">
+            <div class="caption right-align">
+                <h3 class="on-light-background">Une équipe dynamique prête à vous accueillir</h3>
+                <h5 class="light grey-text text-lighten-3 on-light-background">L'AEDI est gérée par une équipe d'étudiants bénévoles et motivés. Leur mission est d'organiser tout au long de l'année des évènements aussi bien festifs que professionels.</h5>
+            </div>
+        </li>
+        <li class="full-height">
+            <img src="{% static 'aedisite/img/rifBis.jpg' %}">
+            <div class="caption left-align">
+                <h3 class="on-light-background">Rencontres IF</h3>
+                <h5 class="light grey-text text-lighten-3 on-light-background">Courant Novembre, nous organisons un forum de recrutement exceptionnel pour mettre en relation les entreprises avec leurs futurs collaborateurs.</h5>
+            </div>
+        </li>
+        <li class="full-height">
+            <img src="{% static 'aedisite/img/guitare.jpg' %}">
+            <div class="caption center-align">
+                <h3 class="on-light-background">Détente et Cohésion</h3>
+                <h5 class="light grey-text text-lighten-3 on-light-small-background">De nombreux évènements sont organisés pendant l'année pour renforcer la cohésion des étudiants et instaurer une ambience chaleureuse.
+            </div>
+        </li>
+        <li class="full-height">
+            <img src="{% static 'aedisite/img/promo.jpg' %}">
+            <div class="caption right-align">
+                <h3 class="on-light-background">À votre écoute</h3>
+                <h5 class="light grey-text text-lighten-3 on-light-small-background">Nous serons ravis d'échanger avec vous, contactez-nous par mail ou directement au local !
+
+                </h5>
+            </div>
+        </li>
+    </ul>
+</div>
+{% endblock %}
