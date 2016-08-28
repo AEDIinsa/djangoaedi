@@ -4,7 +4,7 @@ from . import views
 
 app_name='aedisite'
 urlpatterns = [
-    url(r'^$', views.index, name='index'),
+    url(r'^$', views.render_static, {'filename': 'index.html'}, name='index'),
     url(r'^presentation/$', views.render_static, {'filename': 'presentation.html'}, name='presentation'),
     url(r'^etudiant/agenda/$', views.render_static, {'filename': 'agenda_etudiant.html'}, name='agenda'),
     url(r'^etudiant/services/$', views.render_static, {'filename': 'services.html'}, name='services'),
