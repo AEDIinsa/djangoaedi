@@ -120,3 +120,8 @@ main {
 .side-nav .collapsible-body li.active, .side-nav.fixed .collapsible-body li.active 
 {   background-color: #2196f3;
 }
+
+.slider .slides li .caption
+{
+    padding-top: 25%;
+}
