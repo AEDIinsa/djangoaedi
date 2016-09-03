@@ -37,6 +37,7 @@
     <!-- Materialize Compiled and minified JavaScript -->
     <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/js/materialize.min.js"></script>
+    <script src="https://raw.githubusercontent.com/snaptortoise/konami-js/master/konami.js"></script>
     <!-- Init script -->
     <script type="text/javascript">
 	(function($){
@@ -55,6 +56,9 @@
 	      $('.parallax').parallax();
 	  }); // end of document ready
 	})(jQuery); // end of jQuery name space
+        var oopslol = new Konami(function(){
+            alert("Bien essayé mais nous n'afficherons pas de licorne.");
+        });
     </script>
 </body>
 </html>
