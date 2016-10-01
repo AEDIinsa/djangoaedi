@@ -1,0 +1,4 @@
+Django==1.10
+django-cas-ng==3.5.5
+python-cas==1.1.0
+six==1.10.0
