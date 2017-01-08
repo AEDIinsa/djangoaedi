@@ -26,6 +26,7 @@
                     <ul>
                         <li ><a href="{% url 'aedisite:agenda' %}" class="light-on-nav {% if active == 'agenda' %} active{% endif %}">Agenda</a></li>
                         <li ><a href="{% url 'aedisite:services' %}" class="light-on-nav {% if active == 'services' %} active{% endif %}">Services</a></li>
+                        <li ><a href="{% url 'aedisite:espaceetu' %}" class="light-on-nav {% if active == 'espaceetu' %} active{% endif %}">Espace étudiant</a></li>
                     </ul>
                 </div>
             </li>
@@ -66,6 +67,7 @@
                     <ul>
                         <li class="{% if active == 'agenda' %}active{% endif %}"><a href="{% url 'aedisite:agenda' %}" class="light-on-nav">Agenda</a></li>
                         <li class="{% if active == 'services' %}active{% endif %}"><a href="{% url 'aedisite:services' %}" class="light-on-nav">Services</a></li>
+                        <li ><a href="{% url 'aedisite:espaceetu' %}" class="light-on-nav {% if active == 'espaceetu' %} active{% endif %}">Espace étudiant</a></li>
                     </ul>
                 </div>
             </li>

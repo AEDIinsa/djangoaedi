@@ -1,0 +1,69 @@
+{% extends "aedisite/base.html" %}
+{% load static %}
+
+{% block title %}Espace étudiant - {{ block.super }}{% endblock %}
+
+{% block content %}
+
+    <div class="row blue darken-1 hide-on-med-and-down" id="index-banner">
+        <div class="container valign-wrapper">
+            <h2 class="white-text center-on-small-only font-weight-lower hide-on-med-and-down">Espace étudiant</h2>
+        </div>
+    </div>
+
+    {% if not user.is_authenticated %}
+    <div class="row center">
+        <p>L'espacé étudiant est réservé aux élèves du département informatique de l'INSA Lyon. Veuillez vous connecter en utilisant le CAS INSA.</p>
+        <a href="{% url 'cas_ng_login' %}" class="btn-large waves-effect waves-light modal-trigger red lighten-1">Connexion</a>
+    </div>
+    {% else %}
+    <div class="row">
+        {% if perms.aedisite.create_taiga %}
+	<div class="col m6 s12"> 
+	    <div class="card blue darken-3">
+		<div class="card-content white-text">
+		    <span class="card-title">Compte Taiga</span>
+		    <p>Taiga est un outil de gestion de projet Agile. Très bien conçu, il vous sera utile pour travailler en équipe mais aussi sur vos
+                    projet perso. L'AEDI vous offre un compte complet sans limitation qui vaut plus de 100$/mois. <b>Testez-le dès maintenant, il sera 
+                        décisif pour réussir tous vos PLDs !</b></p>
+		</div>
+		<div class="card-action">
+                    {% if taiga_account %}
+                    <a class="btn red lighten-1 disabled">Tester Taiga</a> <a>Compte taiga déjà existant</a>
+                    {% else %}
+                    <a class="btn red lighten-1" href="{% url 'aedisite:create_taiga' %}">Tester Taiga</a> <a>Un mail vous sera envoyé</a>
+                    {% endif %}
+		</div>
+	    </div>
+        </div>
+        {% endif %}
+	<div class="col m6 s12"> 
+	    <div class="card blue darken-3">
+		<div class="card-content white-text">
+		    <span class="card-title">Prochainement...</span>
+		    <p>Vous trouverez bientôt ici de nouveaux services : inscriptions aux différents évènement, agenda, cvthèque, ressources utiles...
+                    <br />N'hésitez pas à nous envoyer vos idées ou à contribuer directement sur <a class="grey-text lighten-4" href="https://github.com/AEDIinsa/djangoaedi">GitHub</a></p>
+		</div>
+	    </div>
+        </div>
+    </div>
+    {% endif%}
+{% endblock %}
+
+{% block scripts %}
+    <script>
+        $(document).ready(function(){
+            {% if warning %}
+            Materialize.toast("{{ warning }}", 5000, 'orange');
+            {% endif %}
+            {% if success %}
+            Materialize.toast("{{ success }}", 5000, 'green');
+            {% endif %}
+            {% if error %}
+            Materialize.toast("{{ error }}", 5000, 'red');
+            {% endif %}
+        });
+    </script>
+{% endblock %}
+
+
