@@ -5,8 +5,10 @@ from django.contrib.auth.models import User, Group
 @receiver(django_cas_ng.signals.cas_user_authenticated) 
 def handler_login(sender, **kwargs): 
     attributes = kwargs['attributes']
-
-    promo = attributes['supannEtuInscription'].split('][')
+    if isinstance(attributes['supannEtuInscription'], list):
+        promo = attributes['supannEtuInscription'][0].split('][')
+    else:
+        promo = attributes['supannEtuInscription'].split('][')
     promo[0] = promo[0][1:]
     promo[-1] = promo[-1][0:-1]
     promo_dict = dict(x.split('=') for x in promo)

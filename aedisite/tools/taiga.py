@@ -8,9 +8,9 @@ from aedisite.models import TaigaAccount
 def create_taiga_account(user):
     account = {
             "type": "public",
-            "username": user.username +'_test2',
+            "username": user.username,
             "password": get_random_string(),
-            "email": 'test'+user.email,
+            "email": user.email,
             "full_name": user.get_full_name(),
             }
     url = 'https://webaedi.insa-lyon.fr/api/api/v1/auth/register'
